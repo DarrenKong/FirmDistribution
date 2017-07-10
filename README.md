@@ -16,7 +16,7 @@ Enterprise package distribution.
 1. 必备条件
 -  需要购买一个苹果的企业版证书，价格$299/年。
 -  网站需要支持HTTPS协议，用于访问下载.plist文件
-	> 企业版证书Archive的IPA包，所有iOS设备扫描可以下载，并且打开正常；通过开发者证书Archive的IPA包，只有UDID包含在内的iOS可以下载、打开正常，其他不包含UDID的设备能下载、但打开闪退。
+	> 企业版证书Archive的IPA包，所有iOS设备扫描可以下载，并且打开正常；通过开发者证书Archive的IPA包，只有UDID包含在内的iOS设备可以下载且打开正常，其他不包含UDID的设备能下载、但打开闪退。
 
 2.  步骤
 -  将.plist文件与.ipa文件上传至服务器供用户访问
@@ -33,8 +33,8 @@ Enterprise package distribution.
 
     以下键是必填项：
     - URL：应用 (.ipa) 文件的完全限定 HTTPS URL
-    - display-image：57 x 57 像素的 PNG 图像，在下载和安装过程中显示。指定图像的完全限定 URL
-    - full-size-image：512 x 512 像素的 PNG 图像，表示 iTunes 中相应的应用
+    - display-image：57 x 57 像素的 PNG 图像，在下载和安装过程中显示。指定图像的完全限定 URL（ps：经测试，这个非必须，没有显示iOS默认的应用icon，最好有）
+    - full-size-image：512 x 512 像素的 PNG 图像，表示 iTunes 中相应的应用（ps：经测试，这个非必须）
     - bundle-identifier：应用的包标识符，与 Xcode 项目中指定的完全一样
     - bundle-version：应用的包版本，在 Xcode 项目中指定
     - title：下载和安装过程中显示的应用的名称
