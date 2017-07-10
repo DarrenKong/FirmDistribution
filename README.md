@@ -16,6 +16,7 @@ Enterprise package distribution.
 1. 必备条件
 -  需要购买一个苹果的企业版证书，价格$299/年。
 -  网站需要支持HTTPS协议，用于访问下载.plist文件
+	> 企业版证书Archive的IPA包，所有iOS设备扫描可以下载，并且打开正常；通过开发者证书Archive的IPA包，只有UDID包含在内的iOS可以下载、打开正常，其他不包含UDID的设备能下载、但打开闪退。
 
 2.  步骤
 -  将.plist文件与.ipa文件上传至服务器供用户访问
